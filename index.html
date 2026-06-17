@@ -1,0 +1,246 @@
+<!doctype html>
+
+<html lang="ja">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>焦げない台所｜ひと手間を楽しむレシピサイト</title>
+    <meta name="description" content="時短の逆をいく。時短や効率から少し離れて、ひと手間を楽しむ家庭料理。">
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <header class="site-header">
+        <a href="index.html" class="site-logo" aria-label="焦げない台所 トップへ">
+            <span class="site-logo__text">
+                <span class="site-logo__main">焦げない台所</span>
+                <span class="site-logo__sub">Kogenai Kitchen</span>
+            </span>
+            <img src="images/pot-icon.svg" alt="" class="site-logo__icon" aria-hidden="true">
+        </a>
+
+        <button class="menu-toggle" type="button" aria-label="メニューを開く" aria-expanded="false" aria-controls="global-nav">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+
+        <nav class="site-nav" aria-label="グローバルナビゲーション">
+            <ul class="global-nav" id="global-nav">
+                <li>
+                    <a href="index.html" class="global-nav__link" aria-current="page">Home</a>
+                </li>
+                <li>
+                    <a href="recipes.html" class="global-nav__link">Recipes</a>
+                </li>
+                <li>
+                    <a href="columns.html" class="global-nav__link">Columns</a>
+                </li>
+                <li>
+                    <a href="#about" class="global-nav__link">About</a>
+                </li>
+                <li>
+                    <a href="#profile" class="global-nav__link">Profile</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="container">
+        <section class="home-hero">
+            <div class="home-hero__copy">
+                <h1>
+                    <span class="sp-line">焦らず、</span><span class="sp-line">焦がさず、</span><br class="pc-br">
+                    <span class="sp-line">ひと手間を。</span>
+                </h1>
+
+                <p>
+                    ──時短の逆をいく。<br>
+                    丁寧に作る、本格派の家庭料理。
+                </p>
+
+                <a href="recipes.html" class="button button--primary">レシピを見る →</a>
+            </div>
+
+            <img src="images/homemade-logo.webp" alt="" class="home-hero__stamp" aria-hidden="true">
+        </section>
+
+        <section class="home-about" id="about">
+            <div>
+                <p class="section-label">About</p>
+                <h2>このサイトについて</h2>
+                <p>
+                    焦げない台所は、時短だけではこぼれてしまう料理の楽しさを記録するサイトです。<br>
+                    火加減や下ごしらえ、盛りつけの小さな工夫を通して、「ちゃんと作ったな」と思える体験を提供していきます。
+                </p>
+            </div>
+
+            <div class="home-about__image" aria-hidden="true">
+                <img src="images/cooking.webp" alt="">
+            </div>
+        </section>
+
+        <section class="home-recipes" id="recipes">
+            <div class="section-header">
+                <hgroup>
+                    <p class="section-label">Recipes</p>
+                    <h2>最新レシピ</h2>
+                </hgroup>
+            </div>
+
+            <div class="recipe-list">
+                <article class="recipe-card">
+                    <a href="recipes/recipe-cottage-pie.html" class="recipe-card__link">
+                        <img src="images/cottage-pie.webp" alt="コテージパイ">
+
+                        <div class="recipe-card__body">
+                            <span class="recipe-card__tag">Main</span>
+                            <h3>こんがりポテトのコテージパイ</h3>
+                            <p>マッシュポテトとミートフィリングを重ねて焼く、温かいオーブン料理。</p>
+
+                            <div class="recipe-card__meta">
+                                <span>60 min</span>
+                                <span>★★☆</span>
+                                <span>Oven</span>
+                            </div>
+                        </div>
+                    </a>
+                </article>
+
+                <article class="recipe-card">
+                    <a href="recipes/recipe-hamburg.html" class="recipe-card__link">
+                        <img src="images/hamburg.webp" alt="煮込みハンバーグ">
+
+                        <div class="recipe-card__body">
+                            <span class="recipe-card__tag">Main</span>
+                            <h3>レストラン風の煮込みハンバーグ</h3>
+                            <p>赤ワインとフォンドボーで煮込む、少し贅沢なメイン料理。</p>
+
+                            <div class="recipe-card__meta">
+                                <span>60 min</span>
+                                <span>★★☆</span>
+                                <span>Stew</span>
+                            </div>
+                        </div>
+                    </a>
+                </article>
+
+                <article class="recipe-card">
+                    <a href="recipes/recipe-gateau-chocolat.html" class="recipe-card__link">
+                        <img src="images/gateau-chocolat.webp" alt="ガトーショコラ">
+
+                        <div class="recipe-card__body">
+                            <span class="recipe-card__tag">Dessert</span>
+                            <h3>まるで生チョコ 濃厚ガトーショコラ</h3>
+                            <p>しっかり冷やして仕上げる、なめらかな口どけのチョコレート菓子。</p>
+
+                            <div class="recipe-card__meta">
+                                <span>45 min</span>
+                                <span>★☆☆</span>
+                                <span>Dessert</span>
+                            </div>
+                        </div>
+                    </a>
+                </article>
+            </div>
+
+            <div class="home-recipes__more">
+                <a href="recipes.html" class="button button--primary">レシピ一覧を見る →</a>
+            </div>
+        </section>
+
+        <div class="home-pickup">
+            <article class="pickup-card">
+                <a href="recipes/recipe-meat-sauce-pasta.html" class="pickup-card__link">
+                    <p class="section-label">Recommend</p>
+                    <h2>今週のおすすめレシピ</h2>
+
+                    <div class="pickup-card__content">
+                        <img src="images/meat-sauce-pasta.webp" alt="自家製ミートソースパスタ">
+
+                        <div>
+                            <h3>ひと手間絶品 自家製ミートソースパスタ</h3>
+                            <p>
+                                ひき肉を焼いて、赤ワインをしっかり煮詰める。
+                                文字にすると少し面倒でも、ちゃんと味が変わる一皿です。
+                            </p>
+                            <span class="text-link">詳しく見る →</span>
+                        </div>
+                    </div>
+                </a>
+            </article>
+
+            <article class="pickup-card">
+                <div class="pickup-card__header">
+                    <div>
+                        <p class="section-label">Columns</p>
+                        <h2>読みもの</h2>
+                    </div>
+
+                    <a href="columns.html" class="pickup-card__more">コラム一覧へ →</a>
+                </div>
+
+                <div class="column-mini-list">
+                    <a href="columns/column-tema.html">
+                        <img src="images/column-tema.webp" alt="鍋と木べらのある台所">
+                        <span>手間は敵なのか？</span>
+                    </a>
+
+                    <a href="columns/column-jisui.html">
+                        <img src="images/column-jisui.webp" alt="食材が並んだ台所">
+                        <span>自炊は節約ではなく、生活を豊かにする技術</span>
+                    </a>
+
+                    <a href="columns/column-mendou.html">
+                        <img src="images/column-mendou.webp" alt="目玉焼きとチーズをのせたトースト">
+                        <span>料理が面倒な日のちゃんと見える一皿</span>
+                    </a>
+                </div>
+            </article>
+
+            <section class="home-profile" id="profile">
+                <div class="home-profile__inner">
+                    <p class="section-label">Creator</p>
+                    <h2>作っている人について</h2>
+                    <p>
+                        料理好きによる、少し丁寧なレシピとコラムのサイトを運営しています。<br>
+                        時短・コスパ・タイパが叫ばれる中で、たまには時間をかける贅沢もいかがでしょう。
+                    </p>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <footer class="site-footer">
+        <div class="site-footer__inner">
+            <div class="site-footer__brand">
+                <a href="index.html" class="site-logo">
+                    <span class="site-logo__text">
+                        <span class="site-logo__main">焦げない台所</span>
+                        <span class="site-logo__sub">Kogenai Kitchen</span>
+                    </span>
+                    <img src="images/pot-icon.svg" alt="" class="site-logo__icon" aria-hidden="true">
+                </a>
+
+                <p class="site-footer__copy">焦らず、焦がさず、ひと手間を。</p>
+            </div>
+
+            <nav class="site-footer__nav" aria-label="フッターナビゲーション">
+                <a href="index.html">Home</a>
+                <a href="recipes.html">Recipes</a>
+                <a href="columns.html">Columns</a>
+                <a href="#about">About</a>
+                <a href="#profile">Profile</a>
+            </nav>
+
+            <small>© 2026 Kogenai Kitchen. Portfolio site.</small>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+
+</body>
+
+</html>
