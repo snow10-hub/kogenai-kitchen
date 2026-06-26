@@ -133,7 +133,6 @@ blockquote {
     padding: 0;
 }
 
-.global-nav,
 .site-footer__nav {
     list-style: none;
 }
@@ -253,7 +252,6 @@ figure img {
 }
 
 .site-logo__sub {
-    color: var(--muted);
     font-family: var(--font-sans);
     font-size: var(--text-xs);
     line-height: 1.1;
@@ -275,7 +273,7 @@ figure img {
 .global-nav {
     display: flex;
     align-items: center;
-    gap: var(--space-xl);
+    gap: var(--space-md);
     margin: 0;
     padding: 0;
     list-style: none;
@@ -443,10 +441,6 @@ figure img {
         padding-block: var(--space-sm);
     }
 
-    .site-logo {
-        gap: var(--space-2xs);
-    }
-
     .site-logo__text {
         gap: 0.15rem;
     }
@@ -479,26 +473,19 @@ figure img {
     }
 
     .global-nav {
-        display: flex;
         flex-direction: column;
         align-items: stretch;
         gap: var(--space-md);
-
         width: 100%;
         max-height: 0;
-        margin: 0;
-        padding: 0;
         overflow: hidden;
-
         background: color-mix(in srgb, var(--paper) 98%, transparent);
         border-top: 1px solid var(--line);
         border-bottom: 1px solid var(--line);
         box-shadow: 0 18px 36px rgba(75, 48, 31, 0.08);
-
         opacity: 0;
         transform: translateY(-8px);
         pointer-events: none;
-
         transition:
             max-height 0.35s ease,
             opacity 0.25s ease,
@@ -518,9 +505,7 @@ figure img {
         width: 100%;
         min-height: 44px;
         padding: var(--space-sm) var(--space-md);
-        color: var(--muted);
         font-size: var(--text-lg);
-        text-align: center;
     }
 
     .global-nav__link:hover,
@@ -529,18 +514,16 @@ figure img {
     }
 
     .site-footer {
-        padding-block-start: var(--space-2xl);
+        padding-block: var(--space-2xl) var(--space-lg);
     }
 
     .site-footer__inner {
-        grid-template-columns: minmax(0, 1fr) max-content;
         gap: var(--space-xl) var(--space-lg);
     }
 
     .site-footer__nav {
         grid-template-columns: 1fr;
         gap: var(--space-xs);
-        justify-content: end;
     }
 
     .site-footer small {
