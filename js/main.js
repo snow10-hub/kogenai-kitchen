@@ -60,4 +60,33 @@
             }
         });
     }
+
+    const filterButtons = document.querySelectorAll('.recipe-filter button');
+    const recipeCards = document.querySelectorAll('.recipe-list .recipe-card');
+
+    if (filterButtons.length && recipeCards.length) {
+        filterButtons.forEach((button) => {
+            button.addEventListener('click', () => {
+                const filter = button.dataset.filter;
+
+                filterButtons.forEach((btn) => {
+                    btn.classList.remove('is-active');
+                });
+
+                button.classList.add('is-active');
+
+                recipeCards.forEach((card) => {
+                    const category = card.dataset.category;
+
+                    if (filter === 'all' || category === filter) {
+                        card.hidden = false;
+                    } else {
+                        card.hidden = true;
+                    }
+                });
+            });
+        });
+    }
+
+
 }
