@@ -135,7 +135,3 @@ Recipes list page
     background: var(--main-dark);
     border-color: var(--main-dark);
 }
-
-@media (max-width: 780px) {
-
-}

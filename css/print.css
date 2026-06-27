@@ -1,0 +1,94 @@
+@charset "utf-8";
+
+.print-button {
+    margin-top: var(--space-lg);
+}
+
+.print-button button {
+    width: 100%;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: var(--space-sm) var(--space-lg);
+    color: var(--main-dark);
+    background: color-mix(in srgb, var(--paper) 58%, transparent);
+    border: 1px solid color-mix(in srgb, var(--main-dark) 22%, transparent);
+    border-radius: var(--radius-pill);
+    font-size: var(--text-md);
+    font-weight: 700;
+    cursor: pointer;
+    appearance: none;
+    transition:
+        background 0.2s ease,
+        border-color 0.2s ease,
+        transform 0.2s ease;
+}
+
+.print-button button:hover {
+    background: color-mix(in srgb, var(--paper) 90%, transparent);
+    border-color: color-mix(in srgb, var(--main-dark) 34%, transparent);
+    transform: translateY(-2px);
+}
+
+@media print {
+    .site-header,
+    .recipe-page .breadcrumb,
+    .recipe-photo,
+    .print-button,
+    .recipe-tabs,
+    .related,
+    .back-link,
+    .site-footer {
+        display: none;
+    }
+
+    .recipe-page {
+        width: 100%;
+        padding: 0;
+    }
+
+    .recipe-hero {
+        display: block;
+        padding-bottom: var(--space-md);
+        border-bottom: 1px solid #ccc;
+    }
+
+    .recipe-layout {
+        display: flex;
+        flex-direction: column;
+        margin-top: var(--space-lg);
+    }
+
+    .recipe-content,
+    .recipe-sidebar {
+        display: contents;
+    }
+
+    .recipe-panel {
+        display: block;
+    }
+
+    .recipe-story {
+        display: none;
+    }
+
+    .ingredients {
+        order: 1;
+    }
+
+    .steps {
+        order: 2;
+    }
+
+    .tips-card {
+        order: 3;
+    }
+
+    .arrange-card {
+        order: 4;
+    }
+
+    .steps {
+        box-shadow: none;
+    }
+}

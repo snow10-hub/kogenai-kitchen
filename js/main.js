@@ -88,5 +88,31 @@
         });
     }
 
+    const printButton = document.querySelector('.js-print-button');
+
+    if (printButton) {
+        printButton.addEventListener('click', () => {
+            window.print();
+        });
+    }
+
+    const recipeTabs = document.querySelectorAll(".recipe-tab");
+    const recipePanels = document.querySelectorAll(".recipe-panel");
+
+    if (recipeTabs.length && recipePanels.length) {
+        recipeTabs.forEach((tab) => {
+            tab.addEventListener("click", () => {
+                const target = tab.dataset.tab;
+
+                recipeTabs.forEach((item) => {
+                    item.classList.toggle("is-active", item === tab);
+                });
+
+                recipePanels.forEach((panel) => {
+                    panel.classList.toggle("is-active", panel.dataset.panel === target);
+                });
+            });
+        });
+    }
 
 }

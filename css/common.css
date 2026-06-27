@@ -51,7 +51,7 @@
     /* 30px */
     --text-4xl: 2.25rem;
     /* 36px */
-    --text-hero: clamp(2rem, 5vw, 3rem);
+    --text-hero: clamp(2rem, 4.5vw, 3rem);
 
     /* Line Height */
     --leading-tight: 1.3;
