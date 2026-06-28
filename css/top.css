@@ -59,19 +59,14 @@
 
 .home-about p:not(.section-label),
 .home-profile__inner p:not(.section-label) {
-    margin-top: var(--space-md);
+    margin-top: var(--space-sm);
     color: var(--muted);
     font-size: var(--text-base);
     line-height: var(--leading-relaxed);
 }
 
 .home-profile__inner p:not(.section-label) {
-    color: rgba(255, 250, 242, 0.9);
-}
-
-.home-about p:not(.section-label)+p:not(.section-label),
-.home-profile__inner p:not(.section-label)+p:not(.section-label) {
-    margin-top: var(--space-md);
+    color: var(--bg-glow);
 }
 
 /* =========================
@@ -392,10 +387,6 @@
         min-height: 24rem;
         padding-block: var(--space-2xl) var(--space-3xl);
         background:
-            linear-gradient(180deg,
-                rgba(44, 31, 22, 0.06) 0%,
-                rgba(44, 31, 22, 0.18) 42%,
-                rgba(44, 31, 22, 0.58) 100%),
             url("../images/cottage-pie-hiro-sp.webp") center / cover no-repeat;
     }
 

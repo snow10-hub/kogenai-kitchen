@@ -112,6 +112,10 @@
     margin-top: var(--space-xl);
 }
 
+.column-list .column-card[hidden] {
+    display: none;
+}
+
 .column-card {
     position: relative;
     display: grid;

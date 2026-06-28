@@ -126,14 +126,14 @@
   Body
 ========================= */
 
-.column-body > p {
+.column-body>p {
     font-size: var(--text-base);
     line-height: var(--leading-relaxed);
     letter-spacing: var(--tracking-normal);
     margin-top: var(--space-xl);
 }
 
-.column-body > p + p {
+.column-body>p+p {
     margin-top: var(--space-xl);
 }
 
@@ -145,13 +145,12 @@
     margin-block: var(--space-xl);
     padding: var(--space-lg) var(--space-xl);
     background:
-        linear-gradient(
-            135deg,
+        linear-gradient(135deg,
             color-mix(in srgb, var(--bg-deep) 72%, transparent),
-            color-mix(in srgb, var(--main) 18%, transparent)
-        );
+            color-mix(in srgb, var(--main) 18%, transparent));
     border: 1px solid color-mix(in srgb, var(--main-dark) 16%, transparent);
     border-radius: var(--radius-md);
+    width: min(100%, 46rem);
 }
 
 .column-memo-title {
@@ -169,7 +168,7 @@
     width: 1.2rem;
 }
 
-.column-memo-title + p {
+.column-memo-title+p {
     color: color-mix(in srgb, var(--muted) 88%, transparent);
     font-size: var(--text-sm);
     letter-spacing: var(--tracking-normal);
@@ -285,7 +284,7 @@
     box-shadow: 0 14px 30px rgba(75, 48, 31, 0.09);
 }
 
-.column-related-card > a {
+.column-related-card>a {
     position: absolute;
     inset: 0;
     z-index: 10;
@@ -294,7 +293,7 @@
     -webkit-tap-highlight-color: transparent;
 }
 
-.column-related-card > a:focus-visible {
+.column-related-card>a:focus-visible {
     outline: 3px solid color-mix(in srgb, var(--main-dark) 35%, transparent);
     outline-offset: 4px;
 }
@@ -314,7 +313,7 @@
     line-height: var(--leading-normal);
 }
 
-.column-related-card h3 + .column-meta {
+.column-related-card h3+.column-meta {
     margin-top: var(--space-xs);
 }
 

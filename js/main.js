@@ -115,4 +115,31 @@
         });
     }
 
+
+    const columnFilterButtons = document.querySelectorAll('.column-filter button');
+    const columnCards = document.querySelectorAll('.column-list .column-card');
+
+    if (columnFilterButtons.length && columnCards.length) {
+        columnFilterButtons.forEach((button) => {
+            button.addEventListener('click', () => {
+                const filter = button.dataset.filter;
+
+                columnFilterButtons.forEach((btn) => {
+                    btn.classList.remove('is-active');
+                });
+
+                button.classList.add('is-active');
+
+                columnCards.forEach((card) => {
+                    const category = card.dataset.category;
+
+                    if (filter === 'all' || category === filter) {
+                        card.hidden = false;
+                    } else {
+                        card.hidden = true;
+                    }
+                });
+            });
+        });
+    }
 }

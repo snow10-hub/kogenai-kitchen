@@ -16,10 +16,12 @@
         <div class="site-header__inner">
             <a href="index.html" class="site-logo" aria-label="焦げない台所 トップへ">
                 <span class="site-logo__text">
-                    <span class="site-logo__main">焦げない台所</span>
+                    <span class="site-logo__main">
+                        焦げない台所
+                        <img src="images/pot-icon.svg" alt="" class="site-logo__icon" aria-hidden="true">
+                    </span>
                     <span class="site-logo__sub">Kogenai Kitchen</span>
                 </span>
-                <img src="images/pot-icon.svg" alt="" class="site-logo__icon" aria-hidden="true">
             </a>
 
             <button class="menu-toggle" type="button" aria-label="メニューを開く" aria-expanded="false"
@@ -71,7 +73,6 @@
             <button type="button" class="is-active" data-filter="all">すべて</button>
             <button type="button" data-filter="main">メイン</button>
             <button type="button" data-filter="pasta">パスタ</button>
-            <button type="button" data-filter="bread">パン</button>
             <button type="button" data-filter="dessert">お菓子</button>
         </div>
 
@@ -147,42 +148,6 @@
                     </div>
                 </a>
             </article>
-
-            <article class="recipe-card" data-category="bread">
-                <a href="#" class="recipe-card__link" aria-label="カレーパンのレシピを見る">
-                    <img src="images/curry-bread.webp" alt="カレーパン">
-
-                    <div class="recipe-card__body">
-                        <span class="recipe-card__tag">Bread</span>
-                        <h3>揚げたてカレーパン</h3>
-                        <p>外はさっくり、中はとろり。少し手間をかけて作るごほうびパン。</p>
-
-                        <div class="recipe-card__meta">
-                            <span>90 min</span>
-                            <span>4個</span>
-                            <span>Bread</span>
-                        </div>
-                    </div>
-                </a>
-            </article>
-
-            <article class="recipe-card" data-category="main">
-                <a href="#" class="recipe-card__link" aria-label="ビビンバのレシピを見る">
-                    <img src="images/bibimbap.webp" alt="ビビンバ">
-
-                    <div class="recipe-card__body">
-                        <span class="recipe-card__tag">Rice</span>
-                        <h3>彩り野菜のビビンバ</h3>
-                        <p>野菜も肉も一度にとれる、満足感のあるごはん。</p>
-
-                        <div class="recipe-card__meta">
-                            <span>25 min</span>
-                            <span>1人分</span>
-                            <span>Rice</span>
-                        </div>
-                    </div>
-                </a>
-            </article>
         </section>
         <nav class="pagination" aria-label="ページ送り">
             <span class="is-current">1</span>
@@ -194,10 +159,12 @@
             <div class="site-footer__brand">
                 <a href="index.html" class="site-logo">
                     <span class="site-logo__text">
-                        <span class="site-logo__main">焦げない台所</span>
+                        <span class="site-logo__main">
+                            焦げない台所
+                            <img src="images/pot-icon.svg" alt="" class="site-logo__icon" aria-hidden="true">
+                        </span>
                         <span class="site-logo__sub">Kogenai Kitchen</span>
                     </span>
-                    <img src="images/pot-icon.svg" alt="" class="site-logo__icon" aria-hidden="true">
                 </a>
 
                 <p class="site-footer__copy">焦らず、焦がさず、ひと手間を。</p>
@@ -207,8 +174,8 @@
                 <a href="index.html">Home</a>
                 <a href="recipes.html">Recipes</a>
                 <a href="columns.html">Columns</a>
-                <a href="index.html#about">About</a>
-                <a href="index.html#profile">Profile</a>
+                <a href="#about">About</a>
+                <a href="#profile">Profile</a>
             </nav>
 
             <small>© 2026 Kogenai Kitchen. Portfolio site.</small>
