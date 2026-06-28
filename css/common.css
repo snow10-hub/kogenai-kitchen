@@ -189,6 +189,7 @@ h2 {
 
 h3 {
     color: var(--main-dark);
+    font-family: var(--font-serif);
 }
 
 .site-logo__main,

@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Columns｜焦げない台所</title>
+  <meta name="description" content="焦げない台所のコラム一覧ページです。料理の手間、自炊、日々のごはんについての読みものをまとめました。">
+
+  <link rel="stylesheet" href="css/common.css">
+  <link rel="stylesheet" href="css/columns.css">
+</head>
+
+<body>
+  <header class="site-header">
+    <div class="site-header__inner">
+      <a href="index.html" class="site-logo" aria-label="焦げない台所 トップへ">
+        <span class="site-logo__text">
+          <span class="site-logo__main">焦げない台所</span>
+          <span class="site-logo__sub">Kogenai Kitchen</span>
+        </span>
+        <img src="images/pot-icon.svg" alt="" class="site-logo__icon" aria-hidden="true">
+      </a>
+
+      <button class="menu-toggle" type="button" aria-label="メニューを開く" aria-expanded="false"
+        aria-controls="global-nav">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+
+      <nav class="site-nav" aria-label="グローバルナビゲーション">
+        <ul class="global-nav" id="global-nav">
+          <li>
+            <a href="index.html" class="global-nav__link">Home</a>
+          </li>
+          <li>
+            <a href="recipes.html" class="global-nav__link">Recipes</a>
+          </li>
+          <li>
+            <a href="columns.html" class="global-nav__link">Columns</a>
+          </li>
+          <li>
+            <a href="index.html#about" class="global-nav__link">About</a>
+          </li>
+          <li>
+            <a href="index.html#profile" class="global-nav__link">Profile</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main class="columns-page">
+    <section class="columns-hero">
+      <div class="columns-hero-text">
+        <h1>Columns</h1>
+        <p class="columns-subtitle">焦げない台所の読みもの</p>
+        <p class="columns-lead">
+          料理の手間、火加減、台所まわりの小さな考えごと。
+        </p>
+      </div>
+
+      <div class="columns-hero-illust" aria-hidden="true">
+        <img src="images/columns-list-logo.webp" alt="">
+      </div>
+    </section>
+
+    <div class="column-filter" aria-label="コラムカテゴリ">
+      <button type="button" class="is-active" data-filter="all">すべて</button>
+      <button type="button" data-filter="kitchen">台所メモ</button>
+      <button type="button" data-filter="essay">エッセイ</button>
+      <button type="button" data-filter="howto">作る工夫</button>
+    </div>
+
+    <section class="column-list" aria-label="コラム一覧">
+      <article class="column-card column-card-featured" data-category="essay">
+        <span class="featured-label">Featured</span>
+        <a href="columns/column-tema.html" class="column-card-cover" aria-label="手間は敵なのか？を読む"></a>
+
+        <figure class="column-thumb">
+          <img src="images/column-tema.webp" alt="台所道具のイメージ">
+        </figure>
+
+        <div class="column-card-body">
+          <span class="column-tag">Essay</span>
+          <h2>手間は敵なのか？</h2>
+          <p>
+            時短や効率だけでは見落としがちな、料理の中にある小さな楽しさについて。
+          </p>
+
+          <div class="column-card-footer">
+            <div class="column-meta">
+              <span>Kitchen note</span>
+              <span>約3分</span>
+            </div>
+            <span class="read-more">続きを読む →</span>
+          </div>
+        </div>
+      </article>
+
+      <div class="column-section-title">
+        <img src="images/pot-icon.svg" alt="" aria-hidden="true">
+        <h2>他のコラム</h2>
+      </div>
+
+      <article class="column-card" data-category="kitchen">
+        <a href="columns/column-jisui.html" class="column-card-cover"
+          aria-label="自炊は節約ではなく、生活を豊かにする技術を読む"></a>
+
+        <figure class="column-thumb">
+          <img src="images/column-jisui.webp" alt="自炊のイメージ">
+        </figure>
+
+        <div class="column-card-body">
+          <span class="column-tag">Kitchen</span>
+          <h2>自炊は節約ではなく、生活を豊かにする技術</h2>
+          <p>
+            安く済ませるためだけではなく、自分の暮らしを整えるための自炊について。
+          </p>
+
+          <div class="column-card-footer">
+            <div class="column-meta">
+              <span>Kitchen note</span>
+              <span>約4分</span>
+            </div>
+            <span class="read-more">続きを読む →</span>
+          </div>
+        </div>
+      </article>
+
+      <article class="column-card" data-category="howto">
+        <a href="columns/column-mendou.html" class="column-card-cover"
+          aria-label="料理が面倒な日こそ、「ちゃんと見える一皿」を作るを読む"></a>
+
+        <figure class="column-thumb">
+          <img src="images/column-mendou.webp" alt="簡単に整えた一皿のイメージ">
+        </figure>
+
+        <div class="column-card-body">
+          <span class="column-tag">How to</span>
+          <h2>料理が面倒な日こそ、「ちゃんと見える一皿」を作る</h2>
+          <p>
+            がんばれない日でも、皿に盛るだけで食事の印象は少し変えられる。
+          </p>
+
+          <div class="column-card-footer">
+            <div class="column-meta">
+              <span>Kitchen note</span>
+              <span>約3分</span>
+            </div>
+            <span class="read-more">続きを読む →</span>
+          </div>
+        </div>
+      </article>
+    </section>
+
+    <nav class="pagination" aria-label="ページ送り">
+      <span class="is-current">1</span>
+    </nav>
+  </main>
+
+  <footer class="site-footer">
+    <div class="site-footer__inner">
+      <div class="site-footer__brand">
+        <a href="index.html" class="site-logo" aria-label="焦げない台所 トップへ">
+          <span class="site-logo__text">
+            <span class="site-logo__main">焦げない台所</span>
+            <span class="site-logo__sub">Kogenai Kitchen</span>
+          </span>
+          <img src="images/pot-icon.svg" alt="" class="site-logo__icon" aria-hidden="true">
+        </a>
+
+        <p class="site-footer__copy">焦らず、焦がさず、ひと手間を。</p>
+      </div>
+
+      <nav class="site-footer__nav" aria-label="フッターナビゲーション">
+        <a href="index.html">Home</a>
+        <a href="recipes.html">Recipes</a>
+        <a href="columns.html">Columns</a>
+        <a href="index.html#about">About</a>
+        <a href="index.html#profile">Profile</a>
+      </nav>
+
+      <small>© 2026 Kogenai Kitchen. Portfolio site.</small>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+
+</html>
