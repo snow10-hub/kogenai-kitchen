@@ -389,7 +389,7 @@
 
     .column-card-featured .column-thumb img {
         height: auto;
-        aspect-ratio: 16 / 9;
+        aspect-ratio: 2 / 1;
     }
 
     .column-card-featured .column-card-body {
@@ -399,4 +399,9 @@
     .column-card-featured p {
         display: block;
     }
+
+    .read-more {
+        display: none;
+    }
+     
 }

@@ -655,7 +655,7 @@ Recipes list page
 
     .home-recipes .recipe-card__link {
         display: grid;
-        grid-template-columns: 30% minmax(0, 1fr);
+        grid-template-columns: 42% minmax(0, 1fr);
         align-items: stretch;
         min-height: 100%;
     }
@@ -681,11 +681,11 @@ Recipes list page
 
     .recipe-card__body h3 {
         font-size: var(--text-lg);
-        line-height: 1.45;
     }
 
     .recipe-card__body p {
-        font-size: var(--text-sm);
+        font-size: var(--text-xs);
+        line-height: var(--leading-tight);
     }
 
     .recipe-card__meta {

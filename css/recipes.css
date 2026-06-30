@@ -135,3 +135,14 @@ Recipes list page
     background: var(--main-dark);
     border-color: var(--main-dark);
 }
+
+@media (max-width: 780px) {
+
+    .home-recipes .recipe-card__link,
+    .recipes-page .recipe-card__link {
+        display: grid;
+        grid-template-columns: 42% minmax(0, 1fr);
+        align-items: stretch;
+        min-height: 100%;
+    }
+}

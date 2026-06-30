@@ -348,4 +348,8 @@
     .column-related-card img {
         height: 5.2rem;
     }
+
+    .column-share span {
+        display: none;
+    }
 }
