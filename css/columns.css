@@ -373,10 +373,6 @@
         padding: 0;
     }
 
-    .column-card h2 {
-        font-size: var(--text-lg);
-        line-height: 1.45;
-    }
 
     .column-card p {
         display: none;
